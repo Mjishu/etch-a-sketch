@@ -1,0 +1,4 @@
+.new{
+    border: solid 2px black;
+    flex-flow: row wrap;
+}
