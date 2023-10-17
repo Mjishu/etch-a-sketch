@@ -11,12 +11,13 @@
 
 *{
     box-sizing: border-box;
+    background: darkgray;
 }
 
 .gridDiv{ 
     height: 25px;
     width: 25px;
-    background-color: #ddd;
+    background-color: white;
     border: 1px solid #000;
     display: inline-block;
 

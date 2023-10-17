@@ -11,27 +11,30 @@ for (let i = 0; i < (numRows * numRows); i++){
     
 }
 
-const gridDiv = document.querySelectorAll(".gridDiv")
-console.log(gridDiv);
+//const gridDiv = document.querySelectorAll(".gridDiv") // gridDiv is currently an object/nodelist
 
-gridDiv.forEach(div =>{
-    div.addEventListener("mouseover", over, false)
+
+const grid = document.querySelectorAll(".gridDiv");
+console.log(grid);
+console.log(grid.length);
+
+grid.forEach(div =>{
+    div.addEventListener("mouseover", over, false);
 })
 
-function over(){
-    gridDiv.forEach(div =>
-        {
-            div.setAttribute("style", "background-color: blue;")
-        })
+
+
+function over(event){
+        const div = event.target;
+        div.style.backgroundColor = "blue";
+        
 }
 
-gridDiv.forEach(div =>{
-    div.addEventListener("mouseout", out, false)
-})
+// grid.forEach(div =>{
+//     div.addEventListener("mouseout", out, false);
+// })
 
-function out(){
-    gridDiv.forEach(div =>
-        {
-            div.setAttribute("style", "background-color: white;")
-        })
-}
+// function out(event){
+//     const div = event.target;
+//     div.style.backgroundColor = "white";
+// }
