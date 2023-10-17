@@ -31,7 +31,9 @@ function over(event){
 }
 
 function erase(){
-    document.grid.style.backgroundColor = 'white';
+    grid.forEach(div=>{
+        div.style.backgroundColor = 'white';
+    })
 }
 
 // grid.forEach(div =>{
