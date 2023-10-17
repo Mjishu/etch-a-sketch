@@ -30,6 +30,10 @@ function over(event){
         
 }
 
+function erase(){
+    document.grid.style.backgroundColor = 'white';
+}
+
 // grid.forEach(div =>{
 //     div.addEventListener("mouseout", out, false);
 // })
