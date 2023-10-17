@@ -1,4 +1,24 @@
-.new{
-    border: solid 2px black;
-    flex-flow: row wrap;
+#grid-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    padding: 100px;
+    position: relative;
+    left: 40%;
+    top: 50px;
+    
 }
+
+*{
+    box-sizing: border-box;
+}
+
+.gridDiv{ 
+    height: 25px;
+    width: 25px;
+    background-color: #ddd;
+    border: 1px solid #000;
+    display: inline-block;
+
+}
+
