@@ -11,4 +11,27 @@ for (let i = 0; i < (numRows * numRows); i++){
     
 }
 
-// figure out why it wont create divs; line 7 is throwing an error
+const gridDiv = document.querySelectorAll(".gridDiv")
+console.log(gridDiv);
+
+gridDiv.forEach(div =>{
+    div.addEventListener("mouseover", over, false)
+})
+
+function over(){
+    gridDiv.forEach(div =>
+        {
+            div.setAttribute("style", "background-color: blue;")
+        })
+}
+
+gridDiv.forEach(div =>{
+    div.addEventListener("mouseout", out, false)
+})
+
+function out(){
+    gridDiv.forEach(div =>
+        {
+            div.setAttribute("style", "background-color: white;")
+        })
+}
