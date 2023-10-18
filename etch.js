@@ -1,17 +1,15 @@
 
 const gridContainer = document.getElementById("grid-container");
 
-const numRows = 16;
 
 
-for (let i = 0; i < (numRows * numRows); i++){
+for (let i = 0; i < 256; i++){
     const gridDiv = document.createElement("div");
     gridDiv.className = "gridDiv"
     gridContainer.appendChild(gridDiv);
     
 }
 
-//const gridDiv = document.querySelectorAll(".gridDiv") // gridDiv is currently an object/nodelist
 
 
 const grid = document.querySelectorAll(".gridDiv");
@@ -26,7 +24,7 @@ grid.forEach(div =>{
 
 function over(event){
         const div = event.target;
-        div.style.backgroundColor = "blue";
+        div.style.backgroundColor = "cadetblue";
         
 }
 
@@ -36,11 +34,9 @@ function erase(){
     })
 }
 
-// grid.forEach(div =>{
-//     div.addEventListener("mouseout", out, false);
-// })
+function delChildNodes(parent){
+    while(parent.firstChild){
+        parent.removeChild(parent.firstChild)
+    }
+}
 
-// function out(event){
-//     const div = event.target;
-//     div.style.backgroundColor = "white";
-// }

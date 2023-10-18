@@ -1,18 +1,17 @@
 #grid-container{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
     width: 600px;
     padding: 100px;
     position: relative;
-    left: 40%;
-    top: 50px;
-    
-    
+    left: 650px;
+    top: 50px;   
+    scale: 1.25;
 }
 
 *{
     box-sizing: border-box;
-    background: darkgray;
+    background: rgb(82, 95, 88);
 }
 
 .gridDiv{ 
@@ -21,6 +20,30 @@
     background-color: white;
     border: 0px solid #000;
     display: inline-block;
+    aspect-ratio: 1;
 
 }
 
+.eraseBtn{
+    position: relative;
+    border-radius: 5px;
+    border: dotted 2px beige;
+    left:900px;
+    color:azure;
+    height: 40px;
+    width: 80px;
+    top: 10px;
+}
+
+.eraseBtn:hover{
+    background-color:azure ;
+    color: cadetblue;
+}
+
+#slider{
+    position: relative;
+    left: 620px;
+    top: 25px;
+    scale: 1.25;
+    accent-color: azure;
+}
