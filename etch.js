@@ -40,3 +40,6 @@ function delChildNodes(parent){
     }
 }
 
+
+const slider = document.getElementById('slider');
+slider.addEventListener("input", updateGrid)
